@@ -10,6 +10,7 @@ Vehicle CREATE_VEHICLE(Hash modelHash, float x, float y, float z, float heading,
 
 Creates a vehicle with the specified model at the specified position. This vehicle will initially be owned by the creating
 script as a mission entity, and the model should be loaded already (e.g. using REQUEST_MODEL).
+Uses the model name returned by the GetEntityArchetypeName command. The return from GetEntityModel will work for some vehicles, but not for all.
 
 ```
 NativeDB Added Parameter 8: BOOL p7
