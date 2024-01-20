@@ -12,6 +12,7 @@ int GET_VEHICLE_MODEL_NUMBER_OF_SEATS(Hash modelHash);
 ```
 Returns max number of passengers (including the driver) for the specified vehicle model.
 ```
+Uses the model name returned by the GetEntityArchetypeName command. The return from GetEntityModel will work for some vehicles, but not for all.
 
 ## Parameters
 * **modelHash**: 
