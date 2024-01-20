@@ -8,7 +8,7 @@ ns: ENTITY
 Hash GET_ENTITY_MODEL(Entity entity);
 ```
 
-Returns the model hash from an entity.
+The returned model hash is NOT neccessarily the same as the ones listed here (https://docs.fivem.net/docs/game-references/vehicle-models/), or the ones used in e.g. the CreateVehicle command. To acquire those model names use the GetEntityArchetypeName command.
 
 ## Parameters
 * **entity**: The entity to get the model for.
