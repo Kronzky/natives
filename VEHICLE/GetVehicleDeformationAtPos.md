@@ -13,7 +13,9 @@ The only example I can find of this function in the scripts, is this:
 struct _s = VEHICLE::GET_VEHICLE_DEFORMATION_AT_POS(rPtr((A_0) + 4), 1.21f, 6.15f, 0.3f);  
 -----------------------------------------------------------------------------------------------------------------------------------------  
 PC scripts:  
-v_5/*{3}*/ = VEHICLE::GET_VEHICLE_DEFORMATION_AT_POS(a_0._f1, 1.21, 6.15, 0.3);  
+v_5/*{3}*/ = VEHICLE::GET_VEHICLE_DEFORMATION_AT_POS(a_0._f1, 1.21, 6.15, 0.3);
+
+If the specified position lies outside the vehicle boundaries then {0,0,0} is returned.
 ```
 
 ## Parameters
@@ -23,3 +25,8 @@ v_5/*{3}*/ = VEHICLE::GET_VEHICLE_DEFORMATION_AT_POS(a_0._f1, 1.21, 6.15, 0.3);
 * **offsetZ**: 
 
 ## Return value
+
+## Examples
+```lua
+local dmg = GetVehicleDeformationAtPos(currcar, 0.0, 5.0, 0.0);
+```
