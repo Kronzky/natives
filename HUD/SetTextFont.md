@@ -9,7 +9,8 @@ void SET_TEXT_FONT(int fontType);
 ```
 
 ```
-fonts that mess up your text where made for number values/misc stuff  
+Specifies the font used in HUD Text commands.
+Available fonts: https://gtaforums.com/topic/794014-fonts-list/
 ```
 
 ## Parameters
